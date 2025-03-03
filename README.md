@@ -9,8 +9,6 @@
 </div>
 
 ## Abstract
-
-![](img/Intro.png)
 We address the challenge of retrieving previously fact-checked claims in monolingual and crosslingual settings - a critical task given the global prevalence of disinformation. Our approach follows a two-stage strategy: a reliable baseline retrieval system using a finetuned embedding model and an LLM-based reranker. Our key contribution is demonstrating how LLM-based translation can overcome the hurdles of multilingual information retrieval. Additionally, we focus on ensuring that the bulk of the pipeline can be replicated on a consumer GPU. Our final integrated system achieved a success@10 score of 0.938 (∼0.94) and 0.81025 on the monolingual and crosslingual test sets respectively.
 
 ## Setup
