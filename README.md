@@ -1,6 +1,6 @@
 <div align="center">
 
-# Harnessing Translation to Overcome Multilingual IR Challenges in Fact-Checked Claim Retrieval
+# TIFIN India at SemEval-2025: Harnessing Translation to Overcome Multilingual IR Challenges in Fact-Checked Claim Retrieval
 
 [![Workshop](https://img.shields.io/badge/SemEval-2025-blue)](https://semeval.github.io/)  
 [![Proceedings](https://img.shields.io/badge/ACL%20Anthology-SemEval%202025-green)](https://www.aclweb.org/anthology/venues/semeval/)  
