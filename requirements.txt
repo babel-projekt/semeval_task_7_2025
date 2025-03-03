@@ -1,0 +1,9 @@
+PyYAML==6.0.2
+rerankers==0.6.0
+sentence-transformers==3.3.1
+nvitop
+rank_bm25
+datasets
+accelerate
+cohere
+xformers
