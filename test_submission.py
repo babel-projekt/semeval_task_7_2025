@@ -144,7 +144,7 @@ def rerank_docs_llm(
     return doc_ids if return_ids else docs_to_consider
 
 
-TEST_DATA_PATH = "data_test"
+TEST_DATA_PATH = "data"
 
 with open(f"{TEST_DATA_PATH}/tasks.json", "r") as f:
     tasks = json.load(f)
