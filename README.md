@@ -23,6 +23,15 @@ conda activate claim_retrieval
 pip install -r requirements.txt
 ```
 
+### 2. Run the scripts
+
+To train the model, first run the script to mine hard negatives, and then proceed with fine-tuning.
+
+```bash
+python mine_hard_negatives.py
+python finetuning_script.py
+```
+
 ## Dataset and Model Details
 
 Our work utilized multiple datasets and a fine-tuned model, which are publicly available on Hugging Face. Below is a detailed description of each dataset and model, along with the corresponding links.
