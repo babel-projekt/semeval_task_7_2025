@@ -21,3 +21,43 @@ Run the following command to create a Conda environment with Python 3.10:
 conda create --name claim_retrieval python=3.10 -y
 conda activate claim_retrieval
 pip install -r requirements.txt
+```
+
+## Dataset and Model Details
+
+Our work utilized multiple datasets and a fine-tuned model, which are publicly available on Hugging Face. Below is a detailed description of each dataset and model, along with the corresponding links.
+
+### Datasets
+
+#### 1. Mined Negatives for Training
+- **Description**: This dataset contains (anchor, positive, negative) triplets used for fine-tuning the embedding model. 20 negatives were mined per anchor-positive pair.
+- **Link**: [Mined Negatives Task 7](https://huggingface.co/datasets/prasannad28/mined_negatives_task7)
+
+#### 2. Base Data for Negative Mining
+- **Description**: This dataset contains anchor and positive pairs that were used to mine hard negatives.
+- **Link**: [Negatives Base Data](https://huggingface.co/datasets/prasannad28/negatives_base_data)
+
+#### 3. Translated Facts
+- **Description**: This dataset contains LLM-based translations (via Aya-Expanse) of the full fact-space for SemEval Task 7 - Multilingual and Crosslingual Fact-Checked Claim Retrieval. However, it was not used in the final pipeline due to a lack of performance gains. Further refinements were not pursued due to high computational costs.
+- **Link**: [Translated Facts](https://huggingface.co/datasets/prasannad28/translated_facts)
+
+#### 4. Translated Facts Test Set
+- **Description**: This dataset contains the test set of translated facts, used for evaluation.
+- **Link**: [Translated Facts Test Set](https://huggingface.co/datasets/prasannad28/translated_facts_test_set)
+
+#### 5. Augmented Posts Test Set
+- **Description**: This dataset contains augmented social media posts, used for testing retrieval performance.
+- **Link**: [Augmented Posts Test Set](https://huggingface.co/datasets/prasannad28/augmented_posts_test_set)
+
+### Model
+
+#### Final Fine-Tuned Model
+- **Description**: This is the final model trained using positive and negative pairs from a multilingual fact-checking dataset.
+- **Link**: [Final Fine-Tuned Model](https://huggingface.co/prasannad28/stella-en-ft-v1.0)
+
+#### Usage Example
+```python
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer('prasannad28/stella-en-aug-20-v0.6i')
+```
+
